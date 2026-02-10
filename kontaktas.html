@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Susisiekite su Raidas Giminauskas.">
+    <title>Raidos Portfolio | Kontaktas</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎓</text></svg>">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <h1><a href="index.html">Raidos Web Portfolio</a></h1>
+                <button id="mobile-menu-toggle" class="mobile-toggle" aria-label="Atidaryti meniu" aria-expanded="false">☰</button>
+                <ul id="nav-menu" class="nav-menu">
+                    <li><a href="index.html" class="nav-link">Pradžia</a></li>
+                    <li><a href="apie.html" class="nav-link">Apie Mane</a></li>
+                    <li><a href="kursai.html" class="nav-link">Kursai</a></li>
+                    <li><a href="projektai.html" class="nav-link">Projektai</a></li>
+                    <li><a href="kontaktas.html" class="nav-link active">Kontaktas</a></li>
+                </ul>
+                <button id="dark-mode-toggle" class="dark-toggle" aria-label="Perjungti tamsų režimą">🌙</button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="contact parallax">
+            <div class="container">
+                <h1>Susisiekite Su Manimi</h1>
+                <p>Noriu išgirsti jūsų mintis apie projektus ar bendradarbiavimą. Užpildykite formą – gausite atsakymą per 24 val.</p>
+                <form id="contact-form" class="contact-form" novalidate>
+                    <label for="vardas">Jūsų Vardas:</label>
+                    <input type="text" id="vardas" name="vardas" required minlength="2" aria-required="true" placeholder="Vardas Pavardė">
+                    
+                    <label for="email">El. Paštas:</label>
+                    <input type="email" id="email" name="email" required aria-required="true" placeholder="jusu@email.com">
+                    
+                    <label for="tema">Tema:</label>
+                    <select id="tema" name="tema" required aria-required="true">
+                        <option value="">Pasirinkite...</option>
+                        <option value="projektas">Projektas</option>
+                        <option value="kursai">Kursai</option>
+                        <option value="bendradarbiavimas">Bendradarbiavimas</option>
+                        <option value="kitas">Kitas</option>
+                    </select>
+                    
+                    <label for="zinute">Žinutė:</label>
+                    <textarea id="zinute" name="zinute" rows="5" required minlength="10" aria-required="true" placeholder="Jūsų žinutė..."></textarea>
+                    
+                    <button type="submit" class="btn btn-primary">Siųsti Žinutę</button>
+                </form>
+                <div id="form-message" class="form-message" role="alert" aria-live="polite"></div>
+                
+                <h2>Arba Tiesiogiai</h2>
+                <ul class="contact-info">
+                    <li>📧 Email: raidas.giminauskas@example.com</li>
+                    <li>📱 Telefonas: +370 XXX XXXXX</li>
+                    <li>🌐 LinkedIn: /in/raidasgiminauskas</li>
+                    <li>💻 GitHub: github.com/raidasg</li>
+                </ul>
+                <a href="index.html" class="btn btn-secondary">Grįžti Į Pradžią</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Raidas Giminauskas. Egzamino projektas pagal užduotį | Pagalba nuo Everywhere</p>
+        </div>
+    </footer>
+
+    <button id="back-to-top" class="back-to-top" aria-label="Grįžti į viršų">↑</button>
+
+    <script src="script.js"></script>
+</body>
+</html>

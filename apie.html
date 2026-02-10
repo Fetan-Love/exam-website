@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Daugiau apie Raidą Giminauskaitę – studentės biografija ir interesai.">
+    <title>Raidos Portfolio | Apie Mane</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎓</text></svg>">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <h1><a href="index.html">Raidos Web Portfolio</a></h1>
+                <button id="mobile-menu-toggle" class="mobile-toggle" aria-label="Atidaryti meniu" aria-expanded="false">☰</button>
+                <ul id="nav-menu" class="nav-menu">
+                    <li><a href="index.html" class="nav-link">Pradžia</a></li>
+                    <li><a href="apie.html" class="nav-link active">Apie Mane</a></li>
+                    <li><a href="kursai.html" class="nav-link">Kursai</a></li>
+                    <li><a href="projektai.html" class="nav-link">Projektai</a></li>
+                    <li><a href="kontaktas.html" class="nav-link">Kontaktas</a></li>
+                </ul>
+                <button id="dark-mode-toggle" class="dark-toggle" aria-label="Perjungti tamsų režimą">🌙</button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="about parallax">
+            <div class="container">
+                <div class="profile-section">
+                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Ccircle cx='100' cy='100' r='100' fill='%234dabf7'/%3E%3Ctext x='50%25' y='50%25' text-anchor='middle' dy='.3em' font-size='80' fill='white'%3ERG%3C/text%3E%3C/svg%3E" alt="Raidos nuotrauka" class="profile-img" loading="lazy">
+                </div>
+                <h1>Apie Mane</h1>
+                <p>Labas! Esu Raidas Giminauskas, 19 metų studentas iš Lietuvos. Studijuoju informatikos sritį ir specializuojuosi web programavime. Mano aistra – kurti gražius, funkcionalius svetaines, kurios ne tik atrodo gerai, bet ir veikia sklandžiai.</p>
+                <p>Ši svetainė sukurta kaip egzamino užduotis kursui "Internetinių sistemų programavimas" (lekt. V. Steponavičienė). Ji demonstruoja mano įgūdžius: HTML5 semantiką, CSS3 (flexbox/grid, animacijos), JavaScript (ES6+) ir responsive design principus (media queries).</p>
+                
+                <h2>Mano Įgūdžiai</h2>
+                <ul class="skills-list">
+                    <li>HTML/CSS/JS – pažengęs lygis</li>
+                    <li>Responsive & Mobile-First dizainas</li>
+                    <li>Git/GitHub versijų valdymas</li>
+                    <li>Įrankiai: VS Code, Chrome DevTools</li>
+                </ul>
+                
+                <div class="cta-buttons">
+                    <a href="kursai.html" class="btn btn-primary">Mano Kursai</a>
+                    <a href="projektai.html" class="btn btn-secondary">Žiūrėti Projektus</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="interests">
+            <div class="container">
+                <h2>Interesai</h2>
+                <p>Be programavimo, mėgstu žaidimus (pvz., Hades II, ELDEN RING iš mano desktop), muziką (Spotify visada paleista) ir kūrybą (naudoju Photoshop ar panašius). Šis projektas – puikus pavyzdys, kaip sujungiu technikas su kūryba!</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Raidas Giminauskas. Egzamino projektas pagal užduotį | Pagalba nuo Everywhere</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <button id="back-to-top" class="back-to-top" aria-label="Grįžti į viršų">↑</button>
+
+    <script src="script.js"></script>
+</body>
+</html>

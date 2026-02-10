@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Raidos web projektai ir portfolio pavyzdžiai.">
+    <title>Raidos Portfolio | Projektai</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎓</text></svg>">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <h1><a href="index.html">Raidos Web Portfolio</a></h1>
+                <button id="mobile-menu-toggle" class="mobile-toggle" aria-label="Atidaryti meniu" aria-expanded="false">☰</button>
+                <ul id="nav-menu" class="nav-menu">
+                    <li><a href="index.html" class="nav-link">Pradžia</a></li>
+                    <li><a href="apie.html" class="nav-link">Apie Mane</a></li>
+                    <li><a href="kursai.html" class="nav-link">Kursai</a></li>
+                    <li><a href="projektai.html" class="nav-link active">Projektai</a></li>
+                    <li><a href="kontaktas.html" class="nav-link">Kontaktas</a></li>
+                </ul>
+                <button id="dark-mode-toggle" class="dark-toggle" aria-label="Perjungti tamsų režimą">🌙</button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="projects parallax">
+            <div class="container">
+                <h1>Mano Projektai</h1>
+                <p>Čia yra keletas mano sukurtų web projektų. Kiekvienas turi demo ir šaltinio kodo nuorodas (vietoj – lokaliai).</p>
+                <div class="project-grid">
+                    <div class="project-card">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='300'%3E%3Crect width='400' height='300' fill='%23007bff'/%3E%3Ctext x='50%25' y='50%25' text-anchor='middle' dy='.3em' font-size='24' fill='white'%3EWeb Project%3C/text%3E%3C/svg%3E" alt="Raida_WebProject" class="project-img" loading="lazy">
+                        <h2>Raida_WebProject</h2>
+                        <p>Pagrindinis projektas: responsive svetainė su galerija ir forma. Sukurtas naudojant HTML/CSS/JS.</p>
+                        <a href="#" class="btn btn-small" onclick="alert('Demo neprieinama (lokalus projektas)'); return false;">Demo</a>
+                        <a href="#" class="btn btn-small" onclick="alert('Šaltinis faile Desktop\\WorkingWebsite'); return false;">Šaltinis</a>
+                    </div>
+                    <div class="project-card">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='300'%3E%3Crect width='400' height='300' fill='%236c757d'/%3E%3Ctext x='50%25' y='50%25' text-anchor='middle' dy='.3em' font-size='24' fill='white'%3EWorking Website%3C/text%3E%3C/svg%3E" alt="WorkingWebsite" class="project-img" loading="lazy">
+                        <h2>WorkingWebsite</h2>
+                        <p>Interaktyvi svetainė su animacijomis ir API integracija. Parodo pažangius JS įgūdžius.</p>
+                        <a href="#" class="btn btn-small" onclick="alert('Demo neprieinama (lokalus projektas)'); return false;">Demo</a>
+                        <a href="#" class="btn btn-small" onclick="alert('Šaltinis faile Desktop\\WorkingWebsite'); return false;">Šaltinis</a>
+                    </div>
+                    <div class="project-card">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='300'%3E%3Crect width='400' height='300' fill='%2328a745'/%3E%3Ctext x='50%25' y='50%25' text-anchor='middle' dy='.3em' font-size='24' fill='white'%3EPortfolio%3C/text%3E%3C/svg%3E" alt="Egzamino Projektas" class="project-img" loading="lazy">
+                        <h2>Egzamino Užduotis</h2>
+                        <p>Ši svetainė pati! Multi-page portfolio su visomis funkcijomis, pritaikytas prie užduoties reikalavimų.</p>
+                        <a href="index.html" class="btn btn-small">Grįžti Į Pradžią</a>
+                    </div>
+                </div>
+                <p class="project-note">Pastaba: Vaizdai ir nuorodos – placeholder. Įkelkite savo failus iš desktop aplankų (pvz., WorkingWebsite).</p>
+                <a href="kontaktas.html" class="btn btn-primary">Diskutuokime Apie Naujus Projektus</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Raidas Giminauskas. Egzamino projektas pagal užduotį | Pagalba nuo Everywhere</p>
+        </div>
+    </footer>
+
+    <button id="back-to-top" class="back-to-top" aria-label="Grįžti į viršų">↑</button>
+
+    <script src="script.js"></script>
+</body>
+</html>

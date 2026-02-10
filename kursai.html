@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Raidos lankomi kursai ir akademinė veikla.">
+    <title>Raidos Portfolio | Kursai</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎓</text></svg>">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <h1><a href="index.html">Raidos Web Portfolio</a></h1>
+                <button id="mobile-menu-toggle" class="mobile-toggle" aria-label="Atidaryti meniu" aria-expanded="false">☰</button>
+                <ul id="nav-menu" class="nav-menu">
+                    <li><a href="index.html" class="nav-link">Pradžia</a></li>
+                    <li><a href="apie.html" class="nav-link">Apie Mane</a></li>
+                    <li><a href="kursai.html" class="nav-link active">Kursai</a></li>
+                    <li><a href="projektai.html" class="nav-link">Projektai</a></li>
+                    <li><a href="kontaktas.html" class="nav-link">Kontaktas</a></li>
+                </ul>
+                <button id="dark-mode-toggle" class="dark-toggle" aria-label="Perjungti tamsų režimą">🌙</button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="courses parallax">
+            <div class="container">
+                <h1>Mano Kursai</h1>
+                <p>Čia pristatau pagrindinius kursus, kuriuos lankau. Kiekvienas įtraukia praktinius darbus, panašius į šį projektą.</p>
+                <div class="course-grid">
+                    <div class="course-card">
+                        <div class="course-icon">💻</div>
+                        <h2>Internetinių Sistemų Programavimas</h2>
+                        <p>Lekt. V. Steponavičienė | 2026 m. | Web technologijos: HTML, CSS, JS, server-side basics.</p>
+                        <a href="#kursai" class="btn btn-small">Daugiau Info</a>
+                    </div>
+                    <div class="course-card">
+                        <div class="course-icon">🔢</div>
+                        <h2>Algoritmavimo Pagrindai ir Formaliosios Kalbos</h2>
+                        <p>Prof. I. Vaičiulytė | 2026 m. | Algoritmai, duomenų struktūros ir programavimo logika.</p>
+                        <a href="#kursai" class="btn btn-small">Daugiau Info</a>
+                    </div>
+                    <div class="course-card">
+                        <div class="course-icon">🎯</div>
+                        <h2>Raidas_Giminauskas_PS25 Projektas</h2>
+                        <p>Projektinis modulis | 2026 m. | Pilnas web app kūrimas nuo idėjos iki deployment.</p>
+                        <a href="projektai.html" class="btn btn-small">Susiję Projektai</a>
+                    </div>
+                </div>
+                
+                <h2>Pažymiai ir Pasiekimai</h2>
+                <p>Visi kursai baigti su 9-10 balų vidurkiu. Šis svetainė – vienas iš labiausiai ambicingų darbų!</p>
+                <a href="kontaktas.html" class="btn btn-primary">Susisiekite Dėl Rekomendacijų</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Raidas Giminauskas. Egzamino projektas pagal užduotį | Pagalba nuo Everywhere</p>
+        </div>
+    </footer>
+
+    <button id="back-to-top" class="back-to-top" aria-label="Grįžti į viršų">↑</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
